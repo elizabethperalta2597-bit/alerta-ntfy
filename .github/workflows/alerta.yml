@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Enviar notificacion a ntfy
         run: |
-          curl -H "Title: Nuevo push en main" \
-               -d "Se subio codigo al repositorio ${{ github.repository }} por ${{ github.actor }}" \
+          curl -H "Title: Hola Mundo - Elizabeth Peralta Victoriano" \
+               -d "Se subio codigo a main en ${{ github.repository }}. Usuario: ${{ github.actor }}." \
                https://ntfy.sh/devops-itla
